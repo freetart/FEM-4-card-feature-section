@@ -1,0 +1,56 @@
+.features-container {
+  .features {
+    @include maxWidthLg;
+    @include sectionSpacing;
+
+    &-title {
+      @include flexCenter;
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        @include headingStyles;
+        font-size: size(xl);
+        color: color(grayishBlue);
+        font-weight: 300;
+
+        @include responsive(lg) {
+          font-size: size(md);
+        }
+
+        span {
+          display: block;
+          font-size: size(xxl);
+          color: color(darkBlue);
+          font-weight: 500;
+
+          @include responsive(lg) {
+            font-size: size(lg);
+          }
+        }
+      }
+
+      p {
+        @include textStyles;
+        font-size: size(xs) - 0.1rem;
+        max-width: 50%;
+        color: color(grayishBlue);
+
+        @include responsive(lg) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 2rem;
+
+      @include responsive(lg) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -11,7 +11,6 @@
 @mixin headingStyles() {
   font-weight: 600;
   letter-spacing: 0.2rem;
-  text-transform: capitalize;
 }
 
 @mixin textStyles() {
@@ -33,4 +32,12 @@
 @mixin maxWidthSm() {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == lg) {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
 }

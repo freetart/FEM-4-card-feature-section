@@ -1,0 +1,42 @@
+.features-card {
+  background-color: color(white);
+  padding: 2rem;
+  box-shadow: 0.1rem 0.1rem 1.2rem lighten(color(grayishBlue), 15%);
+  border-radius: 0.5rem;
+
+  h2 {
+    @include headingStyles;
+    font-size: size(md);
+    color: color(darkBlue);
+  }
+
+  p {
+    @include textStyles;
+    width: 75%;
+    font-size: size(xxs) - 0.1rem;
+    color: color(grayishBlue);
+  }
+
+  .features-card-img {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5rem;
+
+    img {
+      width: 5rem;
+    }
+  }
+}
+
+.supervisor {
+  border-top: 0.5rem solid color(cyan);
+}
+.team-builder {
+  border-top: 0.5rem solid color(red);
+}
+.karma {
+  border-top: 0.5rem solid color(orange);
+}
+.calculator {
+  border-top: 0.5rem solid color(blue);
+}
