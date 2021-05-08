@@ -1,4 +1,6 @@
 .features-container {
+  overflow: hidden;
+
   .features {
     @include maxWidthLg;
     @include sectionSpacing;

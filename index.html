@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="images/favicon/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Frontend Mentor Four Card Feature Section</title>
@@ -25,7 +26,7 @@
         <div class="features-cards">
           <!-- column -->
           <div class="col">
-            <article class="features-card supervisor">
+            <article class="features-card supervisor" data-aos="fade-right">
               <h2>Supervisor</h2>
               <p>Monitors activity to identify project roadblocks</p>
               <div class="features-card-img">
@@ -35,7 +36,10 @@
           </div>
           <!-- column -->
           <div class="col">
-            <article class="features-card team-builder mb-2">
+            <article
+              class="features-card team-builder mb-2"
+              data-aos="fade-down"
+            >
               <h2>Team Builder</h2>
               <p>
                 Scans our talent network to create the optimal team for your
@@ -48,7 +52,7 @@
                 />
               </div>
             </article>
-            <article class="features-card karma">
+            <article class="features-card karma" data-aos="fade-up">
               <h2>Karma</h2>
               <p>Regularly evaluates our talent to ensure quality</p>
               <div class="features-card-img">
@@ -58,7 +62,7 @@
           </div>
           <!-- column -->
           <div class="col">
-            <article class="features-card calculator">
+            <article class="features-card calculator" data-aos="fade-left">
               <h2>Calculator</h2>
               <p>
                 Uses data from past projects to provide better delivery
@@ -72,6 +76,11 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 1000, once: true });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
