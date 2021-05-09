@@ -2,7 +2,7 @@
   background-color: color(white);
   padding: 2rem;
   box-shadow: 0.1rem 0.1rem 1.2rem lighten(color(grayishBlue), 15%);
-  border-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -57,12 +57,10 @@
 }
 
 .supervisor {
-  border-top: 0.5rem solid color(cyan);
+  border-top: 0.5rem dotted color(cyan);
 
   &:hover,
   &:focus {
-    border-top: 0;
-
     h2,
     p {
       color: color(white);
@@ -74,39 +72,33 @@
   }
 }
 .team-builder {
-  border-top: 0.5rem solid color(red);
+  border-top: 0.5rem dotted color(red);
   @extend .supervisor;
 
   &:hover,
   &:focus {
-    border-top: 0;
-
     .features-card-title::before {
       background-color: color(red);
     }
   }
 }
 .karma {
-  border-top: 0.5rem solid color(orange);
+  border-top: 0.5rem dotted color(orange);
   @extend .supervisor;
 
   &:hover,
   &:focus {
-    border-top: 0;
-
     .features-card-title::before {
       background-color: color(orange);
     }
   }
 }
 .calculator {
-  border-top: 0.5rem solid color(blue);
+  border-top: 0.5rem dotted color(blue);
   @extend .supervisor;
 
   &:hover,
   &:focus {
-    border-top: 0;
-
     .features-card-title::before {
       background-color: color(blue);
     }
