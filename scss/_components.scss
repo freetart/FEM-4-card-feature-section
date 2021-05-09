@@ -120,6 +120,12 @@
   a {
     @include headingStyles;
     color: color(blue);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   img {
