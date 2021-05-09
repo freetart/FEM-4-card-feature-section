@@ -1,3 +1,4 @@
+// card
 .features-card {
   background-color: color(white);
   padding: 2rem;
@@ -102,5 +103,26 @@
     .features-card-title::before {
       background-color: color(blue);
     }
+  }
+}
+
+// footer
+.footer {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+
+  h3 {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+
+  a {
+    @include headingStyles;
+    color: color(blue);
+  }
+
+  img {
+    width: 5rem;
   }
 }
